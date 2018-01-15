@@ -1,6 +1,6 @@
 # Heroku Buildpack for Custom Fonts
 
-Fonts used by [StatesTitle](https://www.statestitle.com) for printing documents.
+Fonts used by [issueapp.com](https://issueapp.com) for printing documents.
 
 __WARNING: DO NOT POINT YOUR BUILDPACK CONFIG TO THIS PROJECT__
 

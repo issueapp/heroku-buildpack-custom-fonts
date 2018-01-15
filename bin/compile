@@ -1,14 +1,10 @@
 #!/usr/bin/env bash
-#
-# Does the dirty work after bin/detect allows us to continue
-#
-# Called by Heroku:
-# bin/compile BUILD_DIR CACHE_DIR ENV_DIR
-#
-set -e
 
 BUILD_DIR="$1"
-FONTS_FILE="$(dirname $0)/../fonts.tar.gz"
+#CACHE_DIR=$2
+#ENV_DIR=$3
+
+FONTS_FILE="../fonts.tar.bz2"
 FONTS_TARGET_DIR="$BUILD_DIR/.fonts"
 
 indent() {
@@ -17,7 +13,7 @@ indent() {
 
 echo "-----> Installing custom fonts"
 mkdir -p "$FONTS_TARGET_DIR"
-tar -xvzf "$FONTS_FILE" -C "$FONTS_TARGET_DIR" | indent
+tar -xvjf "$FONTS_FILE" -C "$FONTS_TARGET_DIR" | indent
 
 echo
 exit 0
