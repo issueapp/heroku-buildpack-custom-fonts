@@ -4,7 +4,7 @@ BUILD_DIR="$1"
 #CACHE_DIR=$2
 #ENV_DIR=$3
 
-FONTS_FILE="../fonts.tar.bz2"
+FONTS_FILE="$(dirname $0)/../fonts.tar.bz2"
 FONTS_TARGET_DIR="$BUILD_DIR/.fonts"
 
 indent() {
